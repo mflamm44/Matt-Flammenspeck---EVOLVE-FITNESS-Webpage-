@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="blog.js" defer></script>
+    <style>
+        
+        .blog-hero {
+            position: relative;
+            height: 60vh;
+            background: url('images/meghan-holmes-buWcS7G1_28-unsplash.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .blog-hero-overlay {
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .blog-hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .blog-hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/pngtree-3d-body-builder-gym-logo-png-image_11437953.png" alt="Gym Logo">
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li><a href="workouts.html">Workout Plans</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <span class="evolve-health">Evolve Health</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-hero">
+            <div class="blog-hero-overlay">
+                <h1>Welcome to the Blog</h1>
+                <p>Share your journey, inspire others, and evolve together.</p>
+            </div>
+        </section>
+        <div class="content-wrapper">
+            <section id="blog-form-section">
+                <h2>Write Your Post</h2>
+                <form id="blog-form">
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                    <textarea id="post-content" placeholder="Write your blog post here..." rows="6" required></textarea>
+                    <textarea id="post-review" placeholder="Write your review here..." rows="4" required></textarea>
+                    <button type="submit">Submit Post</button>
+                </form>
+            </section>
+            <section id="blog-posts-section">
+                <h2>Recent Posts</h2>
+                <div id="blog-posts">
+                    <div class="blog-post">
+                        <h3>My First 5K: A Journey to Fitness</h3>
+                        <p>Last year, I couldn't even jog for more than two minutes without gasping for air. This year, I completed my first 5K race! My key to success was consistency. I started with walking daily, then incorporated interval jogging. Before I knew it, running felt natural. Now, I’m aiming for a 10K next year!</p>
+                        <blockquote>"Evolve Health's tips on staying consistent truly helped me stay on track. The encouragement kept me going."</blockquote>
+                        <hr>
+                    </div>
+                    <div class="blog-post">
+                        <h3>Meal Prepping for Busy Weeks</h3>
+                        <p>If you’re struggling to stay on top of healthy eating, meal prepping can be a game changer. I spend Sundays planning my meals for the week, cooking in bulk, and storing portions in reusable containers. Not only does it save time, but it also keeps me from reaching for unhealthy snacks.</p>
+                        <blockquote>"The recipes shared on Evolve Health are easy to follow and delicious! My favorite is the turkey chili."</blockquote>
+                        <hr>
+                    </div>
+                    <div class="blog-post">
+                        <h3>Strength Training for Beginners</h3>
+                        <p>I used to be intimidated by the weights section at the gym, but now it’s my favorite place. If you’re a beginner, start with bodyweight exercises like squats, push-ups, and planks. Gradually add dumbbells for more resistance. Remember, form is more important than how much you lift!</p>
+                        <blockquote>"I followed Evolve Health's beginner strength training program, and it worked wonders for me."</blockquote>
+                        <hr>
+                    </div>
+                    <div class="blog-post">
+                        <h3>How Yoga Improved My Mental Health</h3>
+                        <p>I started yoga as a way to improve my flexibility but found that it’s much more than stretching. The focus on breathing and mindfulness has significantly reduced my stress levels. I recommend starting with beginner-friendly videos online or attending a class to learn the basics.</p>
+                        <blockquote>"Evolve Health inspired me to try yoga, and it’s been a life-changing experience."</blockquote>
+                        <hr>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Evolve Health. All rights reserved.</p>
+    </footer>
+</body>
+</html>
